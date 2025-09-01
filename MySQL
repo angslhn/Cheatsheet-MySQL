@@ -30,13 +30,15 @@
 - ON UPDATE CURRENT_TIMESTAMP	  Auto-update waktu saat data diubah
 - ON DELETE CASCADE	            Jika data dihapus, data terkait di tabel lain juga ikut terhapus
 
+// Masuk ke MySQL Tetapi Lupa Password
+- mysqld_safe --skip-grant-tables --skip-networking &
+- mysql -u root
+
 // Masuk ke MySQL Via Terminal Dengan Port Default.
 - mysql -u <nama-user> -p
 
 // Masuk ke MySQL Via Terminal Dengan Port Khusus.
 - mysql -u <nama-user> -p -h <host> -P <port>
-
-// Masuk ke MySQL Via Terminal Dengan Port Khusus.
 
 // Clear Terminal MySQL.
 - system cls | clear
